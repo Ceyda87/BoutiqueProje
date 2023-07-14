@@ -1,0 +1,28 @@
+﻿@model IEnumerable<BoutiqueProje.Data.Product>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+
+
+<div class="jumbotron">
+    <div class="container">
+    <h1 class="display-3">Atalay Butik</h1>
+    <p class="lead">aaa</p>
+    <hr class="my-4">
+    <p>bbb</p>
+    <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn More</a>
+    </p>
+    </div>
+</div>
+
+
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+</div>
+
+
+    

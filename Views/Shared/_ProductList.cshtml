@@ -1,0 +1,27 @@
+﻿
+@model IEnumerable<BoutiqueProje.Data.Product>
+
+<div class="row">
+
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+
+        @foreach (var product in @Model)
+        {
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" data-src="/Upload/@product.ImageName" alt="@product.ImageName" />
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="/Home/Details/@product.Id"> @product.ProductName</a>
+                        </h5>
+                        <p class="card-text"></p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+            </div>
+
+        }
+    </div>
+</div>
